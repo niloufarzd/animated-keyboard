@@ -3,7 +3,7 @@ const titleElem = document.querySelector('.title')
 document.addEventListener('keyup', function (event) {
 
 
-
+//create word toUpperCase and add or remove
     appendValueToDom(event)
 
     let userEventKey = event.key.toUpperCase() // 's a d'
@@ -18,7 +18,7 @@ document.addEventListener('keyup', function (event) {
     console.log(mainKeyElem);
 })
 
-
+//remove frist of end word
 function appendValueToDom (event) {
     console.log(event);
 
@@ -26,7 +26,7 @@ function appendValueToDom (event) {
         titleElem.innerHTML = titleElem.innerHTML.slice(0, -1)
         return
     }
-
+//add word
     titleElem.innerHTML += event.key
 
 }
